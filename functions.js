@@ -119,7 +119,30 @@ let productPower= (x, y, z) => {
 }
 
 //productPower(2,3,4);
-  // Bonus Exercises
-  // 1
 
-  // 2
+  // Bonus Exercises
+  // 1 print Evens
+const printEven = () => {
+    for(i=1; i<=100; i++){
+       if(i % 2 === 0) {
+           console.log(i)
+       } else {
+           // do nothing
+       }
+    }
+}
+
+// printEven()
+  // 2 Fibonacci Sequence up to 20
+
+
+  let printFib = (num) => {
+      let n1 = 0
+      let n2 = 1
+      while(n2 < num) {
+          console.log(n2)
+          n2 = n1 + n2
+          n1 = n2 - n1
+      }
+  }
+  printFib(20);
